@@ -12,7 +12,7 @@ package javaapplication30;
 public class Tshirt extends Product {
 
     //Atributos
-    private int size;
+    private String size;
 
  
 
@@ -21,7 +21,8 @@ public class Tshirt extends Product {
      *
      * @return el valor del precio
      */
-    public int getSize() {
+    
+    public String getSize() {
         return size;
     }
 
@@ -30,7 +31,7 @@ public class Tshirt extends Product {
      *
      * @param size modifica el valor de size
      */
-    public void setSize(int size) {
+    public void setSize(String size) {
         this.size = size;
     }
 
@@ -39,16 +40,16 @@ public class Tshirt extends Product {
      * @param size
      * @param price 
      */
-    public Tshirt(int size, double price) {
+    public Tshirt(String size, double price) {
         super(price);
         this.size = size;
     }
 
     @Override
     public String toString() {
-        return "Una camiseta de "
-                + "talla: " + size
-                + "precio: " + getPrice();
+        return "una camiseta de "
+                + "talla " + size
+                + " cuyo precio es " + getPrice();
                 
     }
 
@@ -57,4 +58,16 @@ public class Tshirt extends Product {
     
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 

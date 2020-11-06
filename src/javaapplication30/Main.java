@@ -10,13 +10,46 @@ package javaapplication30;
  * @author Usuario
  */
 public class Main {
+    
+    private final Tshirt tshirt;
+    private final Pencil pencil;
+    
+    public Main(){
+        tshirt = new Tshirt("L", 15);
+        pencil = new Pencil ("azul", 1);
+    }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Tshirt tshirt = new Tshirt("L", 15);
+        Pencil pencil = new Pencil ("azul", 1);
+        
+        System.out.println("Su compra ha sido: " 
+                + tshirt
+                + pencil
+                + ", el total es de "
+                + (tshirt.getPrice()+pencil.getPrice()));
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
